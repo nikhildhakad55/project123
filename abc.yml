@@ -1,0 +1,9 @@
+---
+- name: build docker image
+  hosts: local host
+  tasks:
+      - name: build docker image using ansible
+        docker_image:
+            path: .                    #giving path of current location
+            name: centos
+            tag: latest       
